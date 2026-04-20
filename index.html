@@ -252,6 +252,22 @@ section{padding:var(--section-pad) 0;position:relative}
 .cert-view-btn:hover .btn-arrow{transform:translateX(3px)}
 .cert-view-btn svg{width:15px;height:15px;flex-shrink:0}
 .cert-issue-info{font-family:var(--font-latin);font-size:.7rem;color:var(--ink-muted);letter-spacing:.06em;margin-top:12px;text-align:center}
+@media(max-width:640px){
+  .cert-verify-wrap{margin-top:50px;padding-top:40px}
+  .cert-verify-head{margin-bottom:28px}
+  .cert-verify-head p{font-size:.88rem;line-height:1.7}
+  .cert-cards{gap:16px}
+  .cert-card{padding:24px 20px}
+  .cert-card-title{font-size:1.02rem}
+  .cert-metrics{gap:10px;margin-bottom:18px}
+  .cert-metric{padding:12px 8px}
+  .cert-metric-num{font-size:1.15rem}
+  .cert-metric-label{font-size:.68rem}
+  .cert-detail-list{font-size:.78rem;margin-bottom:16px}
+  .cert-detail-list .dt{font-size:.74rem}
+  .cert-view-btn{padding:12px 14px;font-size:.78rem}
+  .timeline-image-container{padding:16px;margin-top:24px}
+}
 
 /* ========== COMMITTEE ========== */
 .committee-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -1056,7 +1072,7 @@ section{padding:var(--section-pad) 0;position:relative}
     </div>
 
     <!-- ============ CAREER CERTIFICATES ============ -->
-    <div class="cert-verify-wrap reveal">
+    <div class="cert-verify-wrap">
       <div class="cert-verify-head">
         <div class="eyebrow">Career Verification</div>
         <h3>3개 공인 협회 <span class="it">경력증명서</span></h3>
@@ -1066,7 +1082,7 @@ section{padding:var(--section-pad) 0;position:relative}
       <div class="cert-cards">
 
         <!-- 카드 1: 한국건설엔지니어링협회 -->
-        <div class="cert-card">
+        <div class="cert-card reveal">
           <div class="cert-card-head">
             <span class="cert-card-eyebrow">KACEM · Construction</span>
             <div class="cert-card-title">건설기술인 경력증명서</div>
@@ -1090,7 +1106,7 @@ section{padding:var(--section-pad) 0;position:relative}
             <li><span class="dt">관리번호</span><span class="dd">2007-K-00023</span></li>
           </ul>
           <div class="cert-card-foot">
-            <a href="assets/certificates/경력증명서_한국건설협회.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+            <a href="assets/certificates/경력증명서_한국건설협회.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn">
               <span>경력증명서 원본 열람</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </a>
@@ -1099,7 +1115,7 @@ section{padding:var(--section-pad) 0;position:relative}
         </div>
 
         <!-- 카드 2: 한국엔지니어링협회 -->
-        <div class="cert-card">
+        <div class="cert-card reveal">
           <div class="cert-card-head">
             <span class="cert-card-eyebrow">KENCA · Engineering</span>
             <div class="cert-card-title">엔지니어링기술자 경력증명서</div>
@@ -1123,7 +1139,7 @@ section{padding:var(--section-pad) 0;position:relative}
             <li><span class="dt">회원번호</span><span class="dd">10101462</span></li>
           </ul>
           <div class="cert-card-foot">
-            <a href="assets/certificates/경력증명서_엔지니어링협회.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+            <a href="assets/certificates/경력증명서_엔지니어링협회.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn">
               <span>경력증명서 원본 열람</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </a>
@@ -1132,7 +1148,7 @@ section{padding:var(--section-pad) 0;position:relative}
         </div>
 
         <!-- 카드 3: 한국소방시설협회 -->
-        <div class="cert-card">
+        <div class="cert-card reveal">
           <div class="cert-card-head">
             <span class="cert-card-eyebrow">KFFA · Fire Safety</span>
             <div class="cert-card-title">소방기술자 경력증명서</div>
@@ -1156,7 +1172,7 @@ section{padding:var(--section-pad) 0;position:relative}
             <li><span class="dt">수첩번호</span><span class="dd">2014-13-00014W</span></li>
           </ul>
           <div class="cert-card-foot">
-            <a href="assets/certificates/경력증명서_한국소방시설협회.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+            <a href="assets/certificates/경력증명서_한국소방시설협회.pdf" target="_blank" rel="noopener noreferrer" class="cert-view-btn">
               <span>경력증명서 원본 열람</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </a>
@@ -1371,7 +1387,7 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+}, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Gallery filter
@@ -1502,6 +1518,30 @@ document.querySelectorAll('.nav-links a[href^="#"], .btn-primary[href^="#"]').fo
     });
   });
 })();
+
+// 경력증명서 섹션 모바일 안전망
+// IntersectionObserver가 어떤 이유로든 실패해도 1초 후 강제로 visible 처리
+setTimeout(() => {
+  document.querySelectorAll('.cert-verify-wrap .reveal:not(.visible)').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    // 이미 뷰포트 근처 또는 위쪽에 있는 요소는 즉시 표시
+    if (rect.top < window.innerHeight + 300) {
+      el.classList.add('visible');
+    }
+  });
+}, 1000);
+
+// 페이지 완전히 로드된 후 한번 더 체크
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('visible');
+      }
+    });
+  }, 300);
+});
 </script>
 
 </body>
