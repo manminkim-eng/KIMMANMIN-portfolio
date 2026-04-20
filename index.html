@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김만민 건축사 포트폴리오 | KIM MAN MIN ARCHITECT</title>
+<meta name="description" content="건축사·건설사업관리기술자·국제공인 VE전문가(CVS) | 29년 경력의 종합 건축 기술인 김만민">
+<meta property="og:title" content="김만민 건축사 포트폴리오">
+<meta property="og:description" content="29년 경력 · 자격증 12종 · 프로젝트 124건">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========== RESET ========== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Noto Sans KR',-apple-system,sans-serif;font-weight:400;line-height:1.75;color:#2a2a2a;background:#fafaf7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ========== DESIGN TOKENS ========== */
+:root{
+  --bg:#fafaf7;
+  --bg-alt:#f3f1ea;
+  --bg-ivory:#f6f2e7;
+  --bg-dark:#1f1e1a;
+  --ink:#1f1e1a;
+  --ink-soft:#4a4842;
+  --ink-muted:#7a7670;
+  --line:#d9d4c3;
+  --line-soft:#e8e3d4;
+  --accent:#8b6f3e;
+  --accent-deep:#5e4a26;
+  --accent-light:#c7a972;
+  --navy:#2b3e5c;
+  --sage:#6b7a5a;
+  --terracotta:#a8613c;
+  --font-display:'Noto Serif KR','Cormorant Garamond',serif;
+  --font-body:'Noto Sans KR',sans-serif;
+  --font-latin:'Cormorant Garamond',serif;
+  --max-w:1240px;
+  --section-pad:clamp(70px,10vw,130px);
+}
+
+/* ========== TYPOGRAPHY ========== */
+.eyebrow{font-family:var(--font-latin);font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:500;font-style:italic}
+.section-title{font-family:var(--font-display);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);letter-spacing:-.01em;line-height:1.25;color:var(--ink);margin-top:14px}
+.section-title .it{font-family:var(--font-latin);font-style:italic;color:var(--accent);font-weight:400}
+.section-head{margin-bottom:64px;max-width:700px}
+.section-head p.lede{margin-top:20px;color:var(--ink-soft);font-size:1.02rem;line-height:1.8}
+
+/* ========== LAYOUT ========== */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+section{padding:var(--section-pad) 0;position:relative}
+.bg-alt{background:var(--bg-alt)}
+.bg-ivory{background:var(--bg-ivory)}
+.bg-dark{background:var(--bg-dark);color:#e8e5dc}
+.bg-dark .section-title{color:#f2ede0}
+.bg-dark .eyebrow{color:var(--accent-light)}
+
+/* ========== NAV ========== */
+.nav{position:fixed;top:0;left:0;right:0;padding:16px 0;background:rgba(250,250,247,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:100;border-bottom:1px solid transparent;transition:.3s}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;flex-direction:column;line-height:1}
+.nav-brand strong{font-family:var(--font-display);font-size:1.1rem;font-weight:500;letter-spacing:.05em;color:var(--ink)}
+.nav-brand span{font-family:var(--font-latin);font-size:.68rem;letter-spacing:.28em;color:var(--accent);margin-top:4px;font-style:italic}
+.nav-links{display:flex;gap:clamp(18px,3vw,34px);list-style:none;font-size:.86rem;letter-spacing:.04em;align-items:center}
+.nav-links a{color:var(--ink-soft);transition:.2s;position:relative;padding:4px 0}
+.nav-links a:hover{color:var(--accent)}
+.nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--accent);transition:.3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{padding:8px 18px;background:var(--ink);color:#fff !important;border-radius:2px;font-size:.78rem;letter-spacing:.1em}
+.nav-cta:hover{background:var(--accent-deep)}
+.nav-cta::after{display:none !important}
+@media(max-width:820px){.nav-links li.hide-m{display:none}}
+
+/* ========== HERO ========== */
+.hero{min-height:100vh;padding-top:100px;padding-bottom:60px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;opacity:.1;background-image:radial-gradient(ellipse at 85% 15%,var(--accent) 0%,transparent 50%),radial-gradient(ellipse at 10% 90%,var(--navy) 0%,transparent 50%)}
+.hero-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(139,111,62,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(139,111,62,.05) 1px,transparent 1px);background-size:90px 90px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 80%)}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center;width:100%}
+@media(max-width:960px){.hero-inner{grid-template-columns:1fr;gap:60px}}
+.hero-number{font-family:var(--font-latin);font-size:.75rem;letter-spacing:.3em;color:var(--accent);margin-bottom:28px;display:flex;align-items:center;gap:14px;font-style:italic}
+.hero-number::before{content:'';width:44px;height:1px;background:var(--accent)}
+.hero-name{font-family:var(--font-display);font-weight:300;font-size:clamp(3.4rem,8vw,5.8rem);line-height:1.05;letter-spacing:-.03em;margin-bottom:8px;color:var(--ink)}
+.hero-name-latin{font-family:var(--font-latin);font-weight:400;font-size:clamp(1rem,2vw,1.25rem);letter-spacing:.28em;color:var(--accent);margin-bottom:34px;font-style:italic}
+.hero-tagline{font-size:clamp(1.05rem,1.7vw,1.2rem);line-height:1.7;color:var(--ink-soft);max-width:540px;margin-bottom:36px;font-weight:300}
+.hero-tagline strong{color:var(--accent-deep);font-weight:500}
+.hero-roles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.hero-role{font-size:.8rem;padding:8px 16px;border:1px solid var(--line);border-radius:2px;background:rgba(255,255,255,.5);color:var(--ink-soft);letter-spacing:.02em}
+.hero-role.featured{background:var(--ink);color:#f6f2e7;border-color:var(--ink)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:12px;padding:16px 30px;font-size:.85rem;letter-spacing:.1em;font-weight:500;transition:.3s;border:1px solid}
+.btn-primary{background:var(--ink);color:#f6f2e7;border-color:var(--ink)}
+.btn-primary:hover{background:var(--accent-deep);border-color:var(--accent-deep);transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-secondary:hover{background:var(--ink);color:#f6f2e7;transform:translateY(-2px)}
+.btn-primary .arrow,.btn-secondary .arrow{transition:.3s}
+.btn-primary:hover .arrow,.btn-secondary:hover .arrow{transform:translateX(4px)}
+
+.hero-visual{position:relative;aspect-ratio:4/5;width:100%;max-width:520px;margin-left:auto}
+.hero-img{position:absolute;border-radius:2px;box-shadow:0 30px 60px -20px rgba(0,0,0,.28);overflow:hidden;background:#eee}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img-1{top:0;right:0;width:76%;height:62%;z-index:3}
+.hero-img-2{bottom:0;left:0;width:62%;height:46%;z-index:2}
+.hero-img-3{top:34%;left:4%;width:34%;height:32%;z-index:1}
+.hero-badge{position:absolute;top:-16px;left:-16px;width:90px;height:90px;border-radius:50%;background:var(--accent);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-display);font-size:.7rem;letter-spacing:.08em;text-align:center;line-height:1.2;z-index:4;box-shadow:0 10px 25px rgba(0,0,0,.2);transform:rotate(-8deg)}
+.hero-badge strong{font-size:1.6rem;font-weight:400;letter-spacing:-.02em;display:block;margin:2px 0}
+.hero-scroll{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-family:var(--font-latin);font-size:.7rem;letter-spacing:.3em;color:var(--accent);text-transform:uppercase;font-style:italic;display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2}
+.hero-scroll::after{content:'';width:1px;height:40px;background:var(--accent);animation:scrollDown 2s infinite}
+@keyframes scrollDown{0%{opacity:0;transform:translateY(-10px)}50%{opacity:1}100%{opacity:0;transform:translateY(10px)}}
+@media(max-width:960px){.hero-scroll{display:none}}
+
+/* ========== STATS ========== */
+.stats-section{background:var(--bg-dark);color:#e8e5dc;padding:80px 0;position:relative;overflow:hidden}
+.stats-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(ellipse at 10% 50%,rgba(139,111,62,.15) 0%,transparent 50%)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;position:relative}
+@media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.stat{text-align:center;padding:24px 16px;position:relative}
+.stat:not(:last-child)::after{content:'';position:absolute;right:0;top:25%;width:1px;height:50%;background:rgba(255,255,255,.1)}
+@media(max-width:768px){.stat:nth-child(2)::after{display:none}}
+.stat-number{font-family:var(--font-display);font-weight:300;font-size:clamp(2.6rem,4.5vw,3.6rem);line-height:1;color:#f6f2e7;margin-bottom:10px}
+.stat-number .unit{font-size:.45em;color:var(--accent-light);margin-left:4px;font-weight:400}
+.stat-label{font-size:.82rem;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-bottom:4px}
+.stat-sub{font-family:var(--font-latin);font-size:.72rem;letter-spacing:.2em;color:var(--accent-light);font-style:italic;text-transform:uppercase}
+
+/* ========== PROFILE SECTION ========== */
+.profile-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:start}
+@media(max-width:900px){.profile-grid{grid-template-columns:1fr;gap:48px}}
+.profile-img-wrap{position:relative;aspect-ratio:3/4;max-width:420px}
+.profile-img-wrap::before{content:'';position:absolute;top:20px;left:20px;right:-20px;bottom:-20px;border:1px solid var(--accent);z-index:0}
+.profile-img-wrap .img-inner{position:relative;z-index:1;width:100%;height:100%;overflow:hidden;background:var(--bg-alt);display:flex;align-items:center;justify-content:center;color:var(--ink-muted)}
+.profile-img-wrap img{width:100%;height:100%;object-fit:cover}
+.profile-img-placeholder{font-family:var(--font-latin);font-size:.85rem;letter-spacing:.2em;color:var(--ink-muted);text-align:center;padding:20px;font-style:italic}
+.profile-content h2{margin-bottom:28px}
+.profile-intro{font-size:1.1rem;line-height:1.85;color:var(--ink-soft);margin-bottom:32px;font-weight:300}
+.profile-intro p{margin-bottom:20px}
+.profile-highlights{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-top:32px;border-top:1px solid var(--line-soft)}
+@media(max-width:540px){.profile-highlights{grid-template-columns:1fr}}
+.highlight{padding:16px 0}
+.highlight-num{font-family:var(--font-display);font-size:1.5rem;color:var(--accent-deep);margin-bottom:4px;font-weight:400}
+.highlight-txt{font-size:.88rem;color:var(--ink-soft);line-height:1.5}
+
+/* ========== CERTIFICATIONS ========== */
+.certs-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center}
+@media(max-width:900px){.certs-grid{grid-template-columns:1fr}}
+.certs-image img{border-radius:2px;box-shadow:0 20px 40px -15px rgba(0,0,0,.15)}
+.certs-list{list-style:none}
+.cert-item{display:grid;grid-template-columns:90px 1fr auto;gap:20px;padding:18px 0;border-bottom:1px solid var(--line-soft);align-items:center}
+.cert-item.featured{background:linear-gradient(to right,rgba(139,111,62,.08),transparent);padding-left:16px;padding-right:16px;border-bottom-color:var(--line)}
+.cert-year{font-family:var(--font-latin);color:var(--accent);font-size:.95rem;font-weight:500;font-style:italic;letter-spacing:.08em}
+.cert-name{font-weight:500;color:var(--ink);font-size:1rem}
+.cert-name small{display:block;color:var(--ink-muted);font-size:.8rem;font-weight:400;margin-top:3px}
+.cert-star{color:var(--accent);font-size:1.1rem}
+.cert-badge{font-size:.7rem;padding:4px 10px;background:var(--ink);color:#fff;border-radius:2px;letter-spacing:.08em}
+
+
+/* ========== EXPERTISE CARDS ========== */
+.expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:820px){.expertise-grid{grid-template-columns:1fr}}
+.expertise-card{background:#fff;padding:40px 36px;border:1px solid var(--line-soft);border-radius:3px;transition:.4s;position:relative;overflow:hidden}
+.expertise-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:.4s}
+.expertise-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(0,0,0,.12)}
+.expertise-card:hover::before{transform:scaleY(1)}
+.expertise-num{font-family:var(--font-latin);font-size:3rem;color:var(--line);line-height:1;margin-bottom:20px;font-style:italic;font-weight:300;transition:.4s}
+.expertise-card:hover .expertise-num{color:var(--accent-light)}
+.expertise-title{font-family:var(--font-display);font-size:1.4rem;font-weight:500;color:var(--ink);margin-bottom:4px}
+.expertise-title-en{font-family:var(--font-latin);font-size:.88rem;letter-spacing:.15em;color:var(--accent);margin-bottom:24px;font-style:italic}
+.expertise-desc{list-style:none;margin-bottom:28px}
+.expertise-desc li{font-size:.9rem;color:var(--ink-soft);padding:6px 0 6px 20px;position:relative;line-height:1.6}
+.expertise-desc li::before{content:'';position:absolute;left:0;top:14px;width:10px;height:1px;background:var(--accent)}
+.expertise-metrics{display:flex;gap:16px;padding-top:24px;border-top:1px solid var(--line-soft);flex-wrap:wrap}
+.metric{flex:1;min-width:100px}
+.metric-num{font-family:var(--font-display);font-size:1.5rem;color:var(--accent-deep);font-weight:500;line-height:1}
+.metric-label{font-size:.75rem;color:var(--ink-muted);margin-top:4px;letter-spacing:.05em}
+
+/* ========== PROJECT GALLERY ========== */
+.gallery-filters{display:flex;gap:12px;margin-bottom:48px;flex-wrap:wrap;justify-content:center}
+.filter-btn{padding:10px 22px;border:1px solid var(--line);background:transparent;font-family:inherit;font-size:.85rem;color:var(--ink-soft);letter-spacing:.05em;transition:.2s;border-radius:2px;cursor:pointer}
+.filter-btn:hover{border-color:var(--accent);color:var(--accent-deep)}
+.filter-btn.active{background:var(--ink);color:#f6f2e7;border-color:var(--ink)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.gallery-grid{grid-template-columns:1fr}}
+.gallery-item{position:relative;overflow:hidden;border-radius:2px;aspect-ratio:4/3;cursor:pointer;background:#eee}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.3) 60%,transparent 100%);opacity:0;transition:.4s;display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.gallery-item:hover .gallery-overlay{opacity:1}
+.gallery-category{font-family:var(--font-latin);font-size:.72rem;letter-spacing:.25em;color:var(--accent-light);text-transform:uppercase;margin-bottom:8px;font-style:italic}
+.gallery-title{color:#fff;font-family:var(--font-display);font-size:1.1rem;font-weight:500;line-height:1.3;margin-bottom:6px}
+.gallery-meta{color:rgba(255,255,255,.8);font-size:.78rem}
+.gallery-label{position:absolute;top:14px;left:14px;padding:5px 12px;background:rgba(255,255,255,.95);color:var(--ink);font-size:.7rem;letter-spacing:.08em;border-radius:2px;font-weight:500}
+
+/* ========== FEATURED PROJECTS (상세 카드) ========== */
+.featured-grid{display:flex;flex-direction:column;gap:120px;margin-top:20px}
+.featured-project{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.featured-project.reverse{direction:rtl}
+.featured-project.reverse>*{direction:ltr}
+@media(max-width:900px){.featured-project,.featured-project.reverse{grid-template-columns:1fr;direction:ltr;gap:36px}}
+.fp-visual{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:3px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)}
+.fp-visual img{width:100%;height:100%;object-fit:cover;transition:.8s}
+.fp-visual:hover img{transform:scale(1.04)}
+.fp-index{position:absolute;top:20px;left:20px;font-family:var(--font-latin);font-size:.8rem;letter-spacing:.25em;color:#fff;background:rgba(0,0,0,.55);padding:8px 14px;font-style:italic;z-index:2}
+.fp-role{position:absolute;bottom:20px;right:20px;background:var(--accent);color:#fff;padding:8px 16px;font-size:.75rem;letter-spacing:.1em;z-index:2}
+.fp-content .category{font-family:var(--font-latin);font-size:.78rem;letter-spacing:.3em;color:var(--accent);text-transform:uppercase;font-style:italic;margin-bottom:14px}
+.fp-content h3{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:500;line-height:1.25;color:var(--ink);margin-bottom:8px}
+.fp-subtitle{font-size:.95rem;color:var(--ink-muted);margin-bottom:28px;font-style:italic}
+.fp-desc{font-size:.98rem;color:var(--ink-soft);line-height:1.8;margin-bottom:30px}
+.fp-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:30px;padding:24px;background:var(--bg-ivory);border-left:3px solid var(--accent)}
+.fp-spec dt{font-size:.72rem;color:var(--ink-muted);letter-spacing:.1em;margin-bottom:2px;text-transform:uppercase}
+.fp-spec dd{font-size:.92rem;color:var(--ink);font-weight:500;font-family:var(--font-body)}
+.fp-spec dd.big{font-family:var(--font-display);font-size:1.1rem;color:var(--accent-deep)}
+.fp-link{display:inline-flex;align-items:center;gap:10px;color:var(--accent-deep);font-size:.88rem;letter-spacing:.08em;font-weight:500;padding-bottom:4px;border-bottom:1px solid var(--accent);transition:.2s}
+.fp-link:hover{gap:16px;color:var(--ink)}
+
+/* ========== TIMELINE ========== */
+.timeline-wrap{background:var(--bg-ivory);padding:var(--section-pad) 0}
+.timeline-image-container{max-width:680px;margin:40px auto 0;padding:40px;background:#fff;border:1px solid var(--line-soft);box-shadow:0 10px 30px -15px rgba(0,0,0,.08);border-radius:3px}
+.timeline-image-container img{width:100%}
+
+/* ========== COMMITTEE ========== */
+.committee-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:768px){.committee-grid{grid-template-columns:1fr}}
+.committee-card{background:#fff;border:1px solid var(--line-soft);padding:32px;border-radius:3px;transition:.3s;position:relative;overflow:hidden}
+.committee-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.committee-card::before{content:'★';position:absolute;top:24px;right:24px;color:var(--accent-light);font-size:1.3rem;opacity:.4}
+.committee-period{font-family:var(--font-latin);font-size:.82rem;color:var(--accent);letter-spacing:.1em;margin-bottom:8px;font-style:italic;font-weight:500}
+.committee-title{font-family:var(--font-display);font-size:1.15rem;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.35}
+.committee-org{font-size:.88rem;color:var(--ink-soft);border-top:1px solid var(--line-soft);padding-top:14px;margin-top:14px}
+
+/* ========== TRAINING ========== */
+.training-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:48px;background:var(--line-soft)}
+@media(max-width:720px){.training-stats{grid-template-columns:1fr}}
+.training-stat{background:#fff;padding:40px 20px;text-align:center}
+.training-num{font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.4rem);color:var(--accent-deep);font-weight:300;line-height:1}
+.training-num .unit{font-size:.4em;color:var(--ink-muted);margin-left:4px}
+.training-label{font-size:.85rem;color:var(--ink-soft);letter-spacing:.08em;margin-top:10px}
+.training-recent{max-width:820px;margin:0 auto}
+.training-recent h4{font-family:var(--font-display);font-size:1.15rem;text-align:center;margin-bottom:24px;color:var(--ink);font-weight:500}
+.training-list{list-style:none;border-top:1px solid var(--line-soft)}
+.training-item{display:grid;grid-template-columns:110px 1fr auto;gap:20px;padding:14px 0;border-bottom:1px solid var(--line-soft);font-size:.88rem;align-items:center}
+.training-date{color:var(--accent);font-family:var(--font-latin);font-style:italic;font-weight:500}
+.training-title-t{color:var(--ink)}
+.training-org{color:var(--ink-muted);font-size:.8rem}
+@media(max-width:600px){.training-item{grid-template-columns:1fr;gap:4px}.training-org{font-size:.75rem}}
+
+/* ========== LINKS / BLOG ========== */
+.links-section{background:var(--bg-dark);color:#e8e5dc;text-align:center;padding:100px 0 90px}
+.links-section .section-title{color:#f6f2e7}
+.links-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:820px;margin:56px auto 0}
+@media(max-width:720px){.links-row{grid-template-columns:1fr}}
+.link-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);padding:40px 32px;border-radius:3px;text-align:left;transition:.4s;position:relative;overflow:hidden;color:#e8e5dc}
+.link-card:hover{background:rgba(139,111,62,.1);border-color:var(--accent);transform:translateY(-4px)}
+.link-card .icon{font-family:var(--font-latin);font-size:.78rem;letter-spacing:.3em;color:var(--accent-light);text-transform:uppercase;font-style:italic;margin-bottom:16px}
+.link-card h4{font-family:var(--font-display);font-size:1.35rem;font-weight:500;color:#f6f2e7;margin-bottom:10px;line-height:1.3}
+.link-card p{font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:24px}
+.link-card .url{font-family:var(--font-latin);font-size:.85rem;color:var(--accent-light);font-style:italic;word-break:break-all;letter-spacing:.02em;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);display:block}
+.link-card .url::after{content:' ↗';color:var(--accent-light)}
+
+/* ========== FOOTER / CONTACT ========== */
+.contact{background:var(--bg-alt);padding:80px 0 40px;text-align:center}
+.contact-title{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:300;color:var(--ink);margin-bottom:18px;letter-spacing:-.01em}
+.contact-title .it{font-family:var(--font-latin);font-style:italic;color:var(--accent)}
+.contact-sub{color:var(--ink-soft);max-width:540px;margin:0 auto 40px;line-height:1.7}
+.contact-info{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:48px;font-size:.92rem;color:var(--ink-soft)}
+.contact-info span strong{color:var(--ink);display:block;font-size:.72rem;letter-spacing:.15em;margin-bottom:4px;font-weight:500;font-family:var(--font-latin);font-style:italic;text-transform:uppercase}
+.footer-bottom{padding-top:30px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-muted);letter-spacing:.05em}
+.footer-bottom p{margin:4px 0}
+
+/* ========== REVEAL ANIMATIONS ========== */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ========== UTILITIES ========== */
+.text-center{text-align:center}
+.mt-sm{margin-top:20px}
+.mt-md{margin-top:40px}
+.mt-lg{margin-top:60px}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">
+      <strong>김만민 건축사</strong>
+      <span>KIM MAN MIN · ARCHITECT</span>
+    </a>
+    <ul class="nav-links">
+      <li class="hide-m"><a href="#profile">소개</a></li>
+      <li class="hide-m"><a href="#expertise">전문영역</a></li>
+      <li class="hide-m"><a href="#gallery">프로젝트</a></li>
+      <li class="hide-m"><a href="#committee">위촉활동</a></li>
+      <li><a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="nav-cta">블로그 ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-number">№ 01 · ARCHITECT PORTFOLIO</div>
+        <h1 class="hero-name">김 만 민</h1>
+        <div class="hero-name-latin">KIM&nbsp;&nbsp;MAN&nbsp;&nbsp;MIN</div>
+        <p class="hero-tagline">
+          설계부터 감리·VE·안전점검까지<br>
+          건축 생애주기 전 과정을 수행하는 <strong>종합 건축기술인</strong>.
+          29년 8개월의 현장과 12종의 전문 자격으로
+          <strong>품질과 안전</strong>을 건축의 중심에 둡니다.
+        </p>
+        <div class="hero-roles">
+          <span class="hero-role featured">건축사</span>
+          <span class="hero-role featured">국제공인 VE전문가 (CVS)</span>
+          <span class="hero-role">건설사업관리기술자</span>
+          <span class="hero-role">가치혁신전문가 (VMP)</span>
+          <span class="hero-role">소방기술자</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#featured" class="btn-primary">대표 프로젝트 보기 <span class="arrow">→</span></a>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="btn-secondary">네이버 블로그 <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge">
+          Since<strong>1993</strong>ARCHITECT
+        </div>
+        <div class="hero-img hero-img-1">
+          <img src="images/익산_글로벌교류센터.jpg" alt="익산 글로벌 교류센터">
+        </div>
+        <div class="hero-img hero-img-2">
+          <img src="images/원광대_60주년기념관.jpg" alt="원광대 60주년 기념관">
+        </div>
+        <div class="hero-img hero-img-3">
+          <img src="images/내장산국립공원사무소.jpg" alt="내장산 국립공원 사무소">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-number">29<span class="unit">년 8개월</span></div>
+        <div class="stat-label">건설기술자 경력</div>
+        <div class="stat-sub">10,831 Days</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">124<span class="unit">건</span></div>
+        <div class="stat-label">참여 프로젝트</div>
+        <div class="stat-sub">Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">12<span class="unit">종</span></div>
+        <div class="stat-label">보유 자격</div>
+        <div class="stat-sub">Certifications</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">1,166<span class="unit">시간</span></div>
+        <div class="stat-label">교육훈련 이수</div>
+        <div class="stat-sub">Total 40 Courses</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFILE ============ -->
+<section id="profile">
+  <div class="container">
+    <div class="profile-grid">
+      <div class="profile-img-wrap reveal">
+        <div class="img-inner">
+          <div class="profile-img-placeholder">
+            <strong style="font-size:1.15rem;letter-spacing:.3em;display:block;margin-bottom:10px;color:#8b6f3e;font-family:var(--font-display);">KIM MAN MIN</strong>
+            <span style="font-family:var(--font-latin);font-style:italic;color:#8b6f3e;letter-spacing:.15em;">Architect · CVS · VMP</span>
+            <br><br>
+            <span style="font-size:.72rem;color:#999;font-style:normal;letter-spacing:.08em;line-height:1.7;">프로필 사진을 업로드하면<br>이곳에 표시됩니다<br>(추천: 정면 또는 45° 각도,<br>배경 깔끔한 실내 촬영)</span>
+          </div>
+        </div>
+      </div>
+      <div class="profile-content reveal">
+        <div class="eyebrow">About</div>
+        <h2 class="section-title">건축과 기계설비를<br>아우르는 <span class="it">통합 엔지니어</span></h2>
+        <div class="profile-intro">
+          <p>29년간 <strong>건축·기계설비·소방·토목</strong> 분야에서 설계, 건설사업관리(CM), 감리, 기술자문 업무를 수행해 온 종합기술인입니다.</p>
+          <p>건축사이자 기계·설비·소방·토목분야의 기사 자격을 다수 보유한 기술인으로서, 건축과 기계 분야를 아우르는 <strong>통합 엔지니어링 역량</strong>을 강점으로 다양한 프로젝트의 품질 향상과 안전 확보에 기여해 왔습니다.</p>
+          <p>공동주택·교육연구시설·병원·공장·공공시설·하수처리 등 다양한 분야의 기획–기본설계–실시설계–시공–준공 전 과정의 실무 경험을 쌓았으며, 건설사업관리(CM)와 VE 검토, 기계·건축설계의 책임기술자 경험을 통해 프로젝트의 타당성·경제성·기술성을 균형 있게 판단합니다.</p>
+        </div>
+        <div class="profile-highlights">
+          <div class="highlight">
+            <div class="highlight-num">기계·건축</div>
+            <div class="highlight-txt"><strong>특급</strong> 기술자 등급<br>설계·시공·건설사업관리</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-num">1993</div>
+            <div class="highlight-txt">㈜대륙토건사 입사<br>건설 현장 첫 발</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-num">2003</div>
+            <div class="highlight-txt">㈜대성건축사사무소 입사<br>현재 이사 재직</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-num">2015</div>
+            <div class="highlight-txt"><strong>건축사</strong> 자격 취득<br>면허번호 20072</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE (4대 업무영역) ============ -->
+<section class="bg-alt" id="expertise">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Expertise</div>
+      <h2 class="section-title">4대 전문 <span class="it">업무 영역</span></h2>
+      <p class="lede">설계부터 안전점검까지 건축 생애주기 전 과정을 수행합니다. Design · CM · VE · Safety Inspection — 한 사람의 기술인이 원스톱으로.</p>
+    </div>
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <div class="expertise-num">01</div>
+        <div class="expertise-title">건축 · 기계 설계</div>
+        <div class="expertise-title-en">Architectural &amp; Mechanical Design</div>
+        <ul class="expertise-desc">
+          <li>공동주택 · 업무시설 · 교육연구시설</li>
+          <li>의료시설 · 공장 · 종교시설 · 문화시설</li>
+          <li>건축계획 · 실시설계 · 공조냉동설비</li>
+        </ul>
+        <div class="expertise-metrics">
+          <div class="metric"><div class="metric-num">123건</div><div class="metric-label">참여 프로젝트</div></div>
+          <div class="metric"><div class="metric-num">5,922일</div><div class="metric-label">설계 경력</div></div>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-num">02</div>
+        <div class="expertise-title">건설사업관리 · 감리</div>
+        <div class="expertise-title-en">Construction Management &amp; Supervision</div>
+        <ul class="expertise-desc">
+          <li>감독권한대행 건설사업관리 (공공)</li>
+          <li>건축법 감리 · 상주 · 기술지원</li>
+          <li>기계설비 · 공조냉동 전문분야</li>
+        </ul>
+        <div class="expertise-metrics">
+          <div class="metric"><div class="metric-num">10개</div><div class="metric-label">감리 수행 사업</div></div>
+          <div class="metric"><div class="metric-num">1,807억</div><div class="metric-label">누적 공사비</div></div>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-num">03</div>
+        <div class="expertise-title">가치공학 VE 검토</div>
+        <div class="expertise-title-en">Value Engineering · CVS</div>
+        <ul class="expertise-desc">
+          <li>설계 경제성 검토 (건설기술진흥법)</li>
+          <li>건축 · 기계 통합 VE 수행</li>
+          <li>공공사업 · 교육시설 · 하수처리시설</li>
+        </ul>
+        <div class="expertise-metrics">
+          <div class="metric"><div class="metric-num">20건</div><div class="metric-label">VE 수행</div></div>
+          <div class="metric"><div class="metric-num">3년 7개월</div><div class="metric-label">VE 경력</div></div>
+        </div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="expertise-num">04</div>
+        <div class="expertise-title">안전점검 · 내진성능평가</div>
+        <div class="expertise-title-en">Safety Inspection &amp; Seismic Evaluation</div>
+        <ul class="expertise-desc">
+          <li>시설물 정기 · 정밀안전점검</li>
+          <li>구조물 정밀안전진단 · 내진성능평가</li>
+          <li>학교시설 · 공공건축물 · 다중이용건축물</li>
+        </ul>
+        <div class="expertise-metrics">
+          <div class="metric"><div class="metric-num">780건</div><div class="metric-label">안전점검 누적</div></div>
+          <div class="metric"><div class="metric-num">30여건</div><div class="metric-label">내진성능평가</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Certifications</div>
+      <h2 class="section-title">자격증 취득 <span class="it">타임라인</span></h2>
+      <p class="lede">1992년 첫 자격 취득 이후 31년간 쌓아온 12종의 전문 자격. 건축 · 기계 · 토목 · 안전 · VE 5개 분야를 통합 수행하는 드문 이력.</p>
+    </div>
+    <div class="certs-grid">
+      <div class="certs-image reveal">
+        <img src="images/김만민_포트폴리오_02_자격증타임라인.png" alt="자격증 타임라인">
+      </div>
+      <ul class="certs-list reveal">
+        <li class="cert-item featured">
+          <span class="cert-year">2015.12</span>
+          <div class="cert-name"><span class="cert-star">★</span> 건축사 <small>국토교통부 · 면허 20072</small></div>
+          <span class="cert-badge">최고자격</span>
+        </li>
+        <li class="cert-item featured">
+          <span class="cert-year">2023.07</span>
+          <div class="cert-name"><span class="cert-star">★</span> 국제공인 VE전문가 CVS <small>SAVE International</small></div>
+          <span class="cert-badge">국제자격</span>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">2023.07</span>
+          <div class="cert-name">가치혁신전문가 VMP <small>한국가치경영협회</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">2012.11</span>
+          <div class="cert-name">건축산업기사 <small>건축 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">2005.11</span>
+          <div class="cert-name">공조냉동기계기사 <small>기계 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">2003.12</span>
+          <div class="cert-name">건축설비기사 <small>건축 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">2003.06</span>
+          <div class="cert-name">소방설비기사(전기) <small>소방 기계+전기 완성</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">1998.10</span>
+          <div class="cert-name">토목기사 <small>토목 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">1998.03</span>
+          <div class="cert-name">소방설비기사(기계) <small>안전 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">1997.08</span>
+          <div class="cert-name">건설기계설비기사 <small>기계 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">1997.06</span>
+          <div class="cert-name">일반기계기사 <small>기계 · 특급</small></div>
+        </li>
+        <li class="cert-item">
+          <span class="cert-year">1992.12</span>
+          <div class="cert-name">건설기계설비산업기사 <small>기계 · 최초 자격</small></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT GALLERY ============ -->
+<section class="bg-ivory" id="gallery">
+  <div class="container">
+    <div class="section-head reveal" style="margin:0 auto 64px;text-align:center">
+      <div class="eyebrow">Project Gallery</div>
+      <h2 class="section-title">대표 프로젝트 <span class="it">갤러리</span></h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">교육시설 · 공공업무 · 주거 · 산업시설까지 다양한 분야의 설계·감리 실적. 카테고리별로 필터링하여 살펴보세요.</p>
+    </div>
+    
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">전체</button>
+      <button class="filter-btn" data-filter="edu">교육 · 연구</button>
+      <button class="filter-btn" data-filter="public">공공 · 업무</button>
+      <button class="filter-btn" data-filter="housing">주거</button>
+      <button class="filter-btn" data-filter="industry">산업 · 기타</button>
+    </div>
+    
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- 교육연구 -->
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/원광대_60주년기념관.jpg" alt="원광대학교 60주년 기념관">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Memorial Hall</div>
+          <div class="gallery-title">원광대학교 60주년 기념관</div>
+          <div class="gallery-meta">연면적 8,757㎡ · 지하1층~지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/우석고등학교_본관.jpg" alt="우석고등학교 본관동">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · High School</div>
+          <div class="gallery-title">우석고등학교 본관동 신축</div>
+          <div class="gallery-meta">연면적 5,812㎡ · 지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/익산_글로벌교류센터.jpg" alt="익산 글로벌 교류센터">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Global Center</div>
+          <div class="gallery-title">익산 글로벌 교류센터 (조달청)</div>
+          <div class="gallery-meta">연면적 4,461㎡ · 지하1층~지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">감리 · CM</span>
+        <img src="images/원광보건대_복합강의동.jpg" alt="원광보건대 복합강의동">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Lecture Hall</div>
+          <div class="gallery-title">원광보건대학 복합강의동</div>
+          <div class="gallery-meta">연면적 9,172㎡ · 지하1층~지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/중화산도서관.jpg" alt="중화산 도서관">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · Library</div>
+          <div class="gallery-title">중화산 도서관 (전주시)</div>
+          <div class="gallery-meta">연면적 3,623㎡ · 지상4층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/원광보건대_행복기숙사.jpg" alt="원광보건대 행복기숙사">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Dormitory</div>
+          <div class="gallery-title">원광보건대학교 행복기숙사</div>
+          <div class="gallery-meta">연면적 7,783㎡ · 지하1층~지상7층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/우석대_기숙사.jpg" alt="우석대 기숙사">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Dormitory</div>
+          <div class="gallery-title">우석대학교 기숙사</div>
+          <div class="gallery-meta">연면적 18,191㎡ · 지하1층~지상11층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/전북대_게스트하우스.jpg" alt="전북대 게스트하우스">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Guest House</div>
+          <div class="gallery-title">전북대학교 게스트하우스</div>
+          <div class="gallery-meta">연면적 2,394㎡ · 지하1층~지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/훈산학원_체육관.jpg" alt="훈산학원 체육관">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Gymnasium</div>
+          <div class="gallery-title">훈산학원 (우석여고) 체육관</div>
+          <div class="gallery-meta">연면적 954㎡ · 지상2층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/원광대_취업생활관.jpg" alt="원광대 취업생활관">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Residential Hall</div>
+          <div class="gallery-title">원광대학교 취업생활관</div>
+          <div class="gallery-meta">연면적 9,585㎡ · 지하1층~지상9층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/원광고등학교_특별교실.jpg" alt="원광고 특별교실">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Annex</div>
+          <div class="gallery-title">원광고등학교 특별교실 증축</div>
+          <div class="gallery-meta">연면적 1,922㎡ · 지상5층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/장수_천천고등학교.jpg" alt="장수 천천고등학교">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · High School</div>
+          <div class="gallery-title">장수 천천고등학교 개축</div>
+          <div class="gallery-meta">연면적 1,632㎡ · 지하1층~지상2층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="edu">
+        <span class="gallery-label">설계</span>
+        <img src="images/임실_봉황인재학당.jpg" alt="임실 봉황 인재학당">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Education · Academy</div>
+          <div class="gallery-title">임실 봉황 인재학당</div>
+          <div class="gallery-meta">연면적 1,593㎡ · 지상3층</div>
+        </div>
+      </div>
+
+      <!-- 공공업무 -->
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/내장산국립공원사무소.jpg" alt="내장산 국립공원 사무소">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · National Park</div>
+          <div class="gallery-title">내장산 국립공원 사무소</div>
+          <div class="gallery-meta">조달청 발주 · 연면적 1,861㎡</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/한국전기안전공사_서부지사.jpg" alt="한국전기안전공사 전북서부지사">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · KESCO</div>
+          <div class="gallery-title">한국전기안전공사 전북서부지사</div>
+          <div class="gallery-meta">연면적 992㎡ · 지상3층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/한국전기안전공사_실증단지.jpg" alt="한국전기안전공사 실증단지">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · Research</div>
+          <div class="gallery-title">한국전기안전공사 연구원 실증단지</div>
+          <div class="gallery-meta">연면적 760㎡ · 지상3층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/산림교육센터.jpg" alt="산림교육센터">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · Forest Edu</div>
+          <div class="gallery-title">산림 교육센터 (완주군)</div>
+          <div class="gallery-meta">연면적 890㎡ · 지상2층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/익산_올폼사옥.jpg" alt="익산 올폼사옥">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Business · Corporate HQ</div>
+          <div class="gallery-title">익산 ㈜올폼 사옥</div>
+          <div class="gallery-meta">연면적 17,355㎡ · 지하3층~지상6층</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="public">
+        <span class="gallery-label">설계</span>
+        <img src="images/정읍_내장동_숙소.jpg" alt="정읍 내장동 숙소동">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Public · Accommodation</div>
+          <div class="gallery-title">정읍 내장동 숙소동</div>
+          <div class="gallery-meta">연면적 148㎡ · 지상2층</div>
+        </div>
+      </div>
+
+      <!-- 주거 -->
+      <div class="gallery-item reveal" data-cat="housing">
+        <span class="gallery-label">설계</span>
+        <img src="images/대전학하_오투그란데.jpg" alt="대전학하 오투그란데">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Residential · Apartment</div>
+          <div class="gallery-title">대전학하 A2·A3 오투그란데</div>
+          <div class="gallery-meta">1,000세대 · 연면적 202,606㎡</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-cat="housing">
+        <span class="gallery-label">설계</span>
+        <img src="images/군산_수송지구_오투그란데.jpg" alt="군산 수송지구 오투그란데">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Residential · Apartment</div>
+          <div class="gallery-title">군산 수송지구 오투그란데</div>
+          <div class="gallery-meta">724세대 · 연면적 112,081㎡</div>
+        </div>
+      </div>
+
+      <!-- 산업 -->
+      <div class="gallery-item reveal" data-cat="industry">
+        <span class="gallery-label">설계</span>
+        <img src="images/익산_하림증축.jpg" alt="익산 하림 증축">
+        <div class="gallery-overlay">
+          <div class="gallery-category">Industrial · Food Factory</div>
+          <div class="gallery-title">익산 ㈜하림 공장 증축</div>
+          <div class="gallery-meta">연면적 41,661㎡ · 지하1층~지상5층</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECTS (상세 카드) ============ -->
+<section id="featured">
+  <div class="container">
+    <div class="section-head reveal" style="margin:0 auto 80px;text-align:center">
+      <div class="eyebrow">Featured Projects</div>
+      <h2 class="section-title">대표 프로젝트 <span class="it">상세</span></h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">책임기술자로 수행한 주요 프로젝트를 선별해 소개합니다. 각 프로젝트별 상세 내용은 네이버 블로그에서 확인하실 수 있습니다.</p>
+    </div>
+
+    <div class="featured-grid">
+      <!-- 01. 전주 전시컨벤션센터 -->
+      <div class="featured-project reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 01</span>
+          <span class="fp-role">CM · 진행중</span>
+          <img src="images/featured-01.jpg" alt="Project 1" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#2b3e5c,#1f1e1a)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='전주 전시컨벤션센터<br>CM';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">MICE · Construction Management</div>
+          <h3>전주 전시컨벤션센터</h3>
+          <p class="fp-subtitle">전북 대형 MICE 인프라 · 감독권한대행 CM</p>
+          <p class="fp-desc">전북특별자치도 전주시 발주 전시컨벤션센터 건립공사의 감독권한대행 등 건설사업관리를 수행 중입니다. 지하 1층, 지상 4층, 연면적 82,866㎡의 대규모 복합시설로 전북 지역 MICE 산업 활성화의 핵심 인프라입니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>문화및집회시설 (전시장)</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">405억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">82,866㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2026.04 ~ 2026.10</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 02. 군산남중·상일고 이전 -->
+      <div class="featured-project reverse reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 02</span>
+          <span class="fp-role">CM · 진행중</span>
+          <img src="images/featured-02.jpg" alt="Project 2" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#6b7a5a,#2b3e5c)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='군산남중·상일고<br>이전 CM';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">Education · Construction Management</div>
+          <h3>군산남중 · 상일고 이전 신축</h3>
+          <p class="fp-subtitle">전북특별자치도교육청 발주 · 감독권한대행 CM</p>
+          <p class="fp-desc">군산남중(연면적 9,554㎡, 지상4층)과 군산상일고(연면적 14,498㎡, 지하1층·지상4층) 두 학교의 이전 신축 건설사업관리 용역을 기술지원기술자로 수행하고 있습니다. 교육환경 개선을 위한 대규모 공공 프로젝트입니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>교육연구시설 (학교)</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">405억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">24,053㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2025.08 ~ 2026.10</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 03. 익산 어양동 도시형생활주택 -->
+      <div class="featured-project reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 03</span>
+          <span class="fp-role">감리 · 완료</span>
+          <img src="images/featured-03.jpg" alt="Project 3" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#a8613c,#5e4a26)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='익산 어양동<br>도시형생활주택';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">Residential · Supervision</div>
+          <h3>익산 어양동 도시형생활주택</h3>
+          <p class="fp-subtitle">20층 공동주택 건축법 감리</p>
+          <p class="fp-desc">익산시 어양동에 조성된 지하 1층·지상 20층, 연면적 31,684㎡ 공동주택의 건축법 감리를 수행했습니다. 공사비 470억 원 규모의 대형 도심 주거 프로젝트로, 3년에 걸친 감리를 통해 안전하고 품질 높은 주거 인프라 구축에 기여했습니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>공동주택</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">470억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">31,684㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2021.12 ~ 2024.09</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 04. 익산패션주얼리 R&D센터 -->
+      <div class="featured-project reverse reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 04</span>
+          <span class="fp-role">상주감리</span>
+          <img src="images/featured-04.jpg" alt="Project 4" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#8b6f3e,#a8613c)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='익산패션주얼리<br>R&D센터';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">R&amp;D · Resident Supervision</div>
+          <h3>익산패션주얼리 R&amp;D센터</h3>
+          <p class="fp-subtitle">교육연구시설 · 시공감리 상주기술자</p>
+          <p class="fp-desc">익산시 발주 익산패션주얼리 공동 R&D센터 건립공사 시공감리 용역에서 상주기술자로 참여하여 연면적 5,472㎡ 규모의 연구시설을 완공했습니다. 지역 주얼리 산업의 기술 혁신을 위한 핵심 인프라입니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>교육연구시설 (연구소)</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">66억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">5,472㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2013.08 ~ 2013.12</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 05. 내장산국립공원사무소 -->
+      <div class="featured-project reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 05</span>
+          <span class="fp-role">설계</span>
+          <img src="images/내장산국립공원사무소.jpg" alt="내장산 국립공원 사무소">
+        </div>
+        <div class="fp-content">
+          <div class="category">Public · National Park Office</div>
+          <h3>내장산 국립공원 사무소</h3>
+          <p class="fp-subtitle">조달청 발주 · 공공 업무시설 설계</p>
+          <p class="fp-desc">정읍시 내장동 일원 대지면적 7,986㎡에 계획된 연면적 1,861㎡ 규모의 국립공원 사무소 신축 설계를 수행했습니다. 자연경관과 조화되는 저층 계획과 친환경 재료 선택으로 산림 환경에 녹아드는 건축물을 구현했습니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>업무시설 · 공공</dd></div>
+            <div class="fp-spec"><dt>규모</dt><dd class="big">지하1층·지상2층</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">1,861㎡</dd></div>
+            <div class="fp-spec"><dt>대지면적</dt><dd>7,986㎡</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 06. 전북대 감염병대응센터 -->
+      <div class="featured-project reverse reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 06</span>
+          <span class="fp-role">책임기술자</span>
+          <img src="images/featured-06.jpg" alt="Project 6" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#2b3e5c,#8b6f3e)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='전북대<br>감염병대응센터';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">Medical · Infectious Disease Center</div>
+          <h3>전북대 감염병대응센터</h3>
+          <p class="fp-subtitle">의료시설 신축 설계 · 책임기술자</p>
+          <p class="fp-desc">전북대학교 발주 감염병대응센터 신축공사 설계 용역에서 건축·기계 책임기술자로 참여했습니다. 건축면적 1,220㎡, 연면적 4,963㎡, 지상 1층·5층 구조의 의료시설로, 감염병 대응이라는 특수 기능에 맞는 구획·공조·동선 계획을 수립했습니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>의료시설 (병원)</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">625억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">4,963㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2020.09 ~ 2020.12</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 07. 팔복예술공장 -->
+      <div class="featured-project reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 07</span>
+          <span class="fp-role">설계</span>
+          <img src="images/featured-07.jpg" alt="Project 7" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#6b7a5a,#a8613c)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='팔복예술공장';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">Urban Regeneration · Art Factory</div>
+          <h3>팔복예술공장 조성</h3>
+          <p class="fp-subtitle">전주시 도시재생 · 문화 전시시설</p>
+          <p class="fp-desc">전주시 발주 팔복예술공장 조성사업 설계용역을 수행한 도시재생 대표 프로젝트입니다. 건축면적 2,622㎡, 연면적 4,186㎡, 지상 2층 규모로 폐공장을 문화·예술 공간으로 재탄생시켰으며, 지역 문화 콘텐츠의 새로운 허브로 자리잡았습니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>문화및집회시설 (전시장)</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">4,186㎡</dd></div>
+            <div class="fp-spec"><dt>규모</dt><dd>지상 2층</dd></div>
+            <div class="fp-spec"><dt>연도</dt><dd>2017</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- 08. 익산센트럴시티 -->
+      <div class="featured-project reverse reveal">
+        <div class="fp-visual">
+          <span class="fp-index">№ 08</span>
+          <span class="fp-role">감리</span>
+          <img src="images/featured-08.jpg" alt="Project 8" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#5e4a26,#1f1e1a)';var d=document.createElement('div');d.style.cssText='position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:1.3rem;font-weight:400;text-align:center;padding:20px;letter-spacing:.05em;line-height:1.4;';d.innerHTML='익산센트럴시티';this.parentElement.appendChild(d);">
+        </div>
+        <div class="fp-content">
+          <div class="category">Culture &amp; Assembly · Supervision</div>
+          <h3>익산센트럴시티 신축공사</h3>
+          <p class="fp-subtitle">문화및집회시설 · 건축법 감리 기술지원</p>
+          <p class="fp-desc">익산시 발주 익산센트럴시티 신축공사의 건축법 감리를 기술지원기술자로 수행했습니다. 지하 3층~지상 7층, 건축면적 3,197㎡, 연면적 30,259㎡의 대형 문화·집회시설로 공사비 273억 원 규모의 도심 복합시설입니다.</p>
+          <dl class="fp-specs">
+            <div class="fp-spec"><dt>시설구분</dt><dd>문화및집회시설</dd></div>
+            <div class="fp-spec"><dt>공사비</dt><dd class="big">273억 원</dd></div>
+            <div class="fp-spec"><dt>연면적</dt><dd class="big">30,259㎡</dd></div>
+            <div class="fp-spec"><dt>기간</dt><dd>2016.08 ~ 2019.02</dd></div>
+          </dl>
+          <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="fp-link">블로그에서 상세 보기 <span>↗</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT TIMELINE ============ -->
+<div class="timeline-wrap">
+  <div class="container">
+    <div class="section-head reveal" style="margin:0 auto 40px;text-align:center">
+      <div class="eyebrow">Timeline</div>
+      <h2 class="section-title">주요 프로젝트 <span class="it">연대기</span></h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">2003년 첫 실무 프로젝트부터 2026년 현재 진행 중인 MICE 인프라 CM까지 · 대표작 18선.</p>
+    </div>
+    <div class="timeline-image-container reveal">
+      <img src="images/김만민_포트폴리오_04_프로젝트타임라인.png" alt="주요 프로젝트 타임라인">
+    </div>
+  </div>
+</div>
+
+<!-- ============ COMMITTEE ACTIVITIES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Public Committee</div>
+      <h2 class="section-title">공공 기술자문 <span class="it">위촉 활동</span></h2>
+      <p class="lede">익산시·전라북도·전북특별자치도 등 공공기관의 건축위원·기술자문단 위원으로 활동하며 지역 건축물의 안전성과 품질 향상에 기여하고 있습니다.</p>
+    </div>
+    <div class="committee-grid">
+      <div class="committee-card reveal">
+        <div class="committee-period">2021.08 — 2027.07</div>
+        <div class="committee-title">익산시 건축위원회 위원</div>
+        <div class="committee-org">위촉기관 : 익산시장<br>건축심의 · 허가 자문 · 도시경관 심사</div>
+      </div>
+      <div class="committee-card reveal">
+        <div class="committee-period">2025.02 — 2027.01</div>
+        <div class="committee-title">전북특별자치도 기술자문단 자문위원</div>
+        <div class="committee-org">위촉기관 : 전북특별자치도지사<br>도 단위 공공건축 기술자문</div>
+      </div>
+      <div class="committee-card reveal">
+        <div class="committee-period">2023.01 — 2025.01</div>
+        <div class="committee-title">전라북도 공동주택 기술자문단 자문위원</div>
+        <div class="committee-org">위촉기관 : 전라북도지사<br>공동주택 기술 심의</div>
+      </div>
+      <div class="committee-card reveal">
+        <div class="committee-period">2025.05 — 2027.05</div>
+        <div class="committee-title">익산시 지역건축안전센터 건축안전자문단 위원</div>
+        <div class="committee-org">위촉기관 : 익산시장<br>건축물 안전 자문</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAINING ============ -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="section-head reveal" style="margin:0 auto 60px;text-align:center">
+      <div class="eyebrow">Continuing Education</div>
+      <h2 class="section-title">지속 학습 <span class="it">· 교육훈련 이수</span></h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto">건설기술 진흥법이 정한 의무교육을 넘어 전문 역량 확장을 위해 꾸준히 학습합니다. 총 40회 과정 · 1,166시간 이수.</p>
+    </div>
+
+    <div class="training-stats reveal">
+      <div class="training-stat">
+        <div class="training-num">1,166<span class="unit">시간</span></div>
+        <div class="training-label">누적 이수시간</div>
+      </div>
+      <div class="training-stat">
+        <div class="training-num">40<span class="unit">회</span></div>
+        <div class="training-label">이수 과정</div>
+      </div>
+      <div class="training-stat">
+        <div class="training-num">595<span class="unit">hr</span></div>
+        <div class="training-label">건설사업관리 분야</div>
+      </div>
+    </div>
+
+    <div class="training-recent reveal">
+      <h4>최근 이수 교육 (2023~2025)</h4>
+      <ul class="training-list">
+        <li class="training-item">
+          <span class="training-date">2025.02</span>
+          <span class="training-title-t">건설사업관리기술인 계속특급전문교육 (35시간)</span>
+          <span class="training-org">건설기술호남교육원</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2025.01</span>
+          <span class="training-title-t">건설사업관리기술인 계속특급전문교육 (35시간)</span>
+          <span class="training-org">건설기술호남교육원</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2024.11</span>
+          <span class="training-title-t">건축물관리 정경책임자 집합교육 (21시간)</span>
+          <span class="training-org">대한건축사협회</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2024.11</span>
+          <span class="training-title-t">교육시설 사전기획 전문가 교육과정 (8시간)</span>
+          <span class="training-org">대한건축사협회</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2024.09</span>
+          <span class="training-title-t">성능 보수교육과정 · 건축반 (7시간)</span>
+          <span class="training-org">국토안전관리원</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2023.12</span>
+          <span class="training-title-t">공사감리 전문교육 (건축사) (4시간)</span>
+          <span class="training-org">대한건축사협회</span>
+        </li>
+        <li class="training-item">
+          <span class="training-date">2023.01</span>
+          <span class="training-title-t">VMF-2 과정 (가치방법론, 32시간)</span>
+          <span class="training-org">한국가치경영협회 [SAVE]</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LINKS (홈페이지/블로그) ============ -->
+<section class="links-section" id="links">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--accent-light)">Connect</div>
+    <h2 class="section-title">더 많은 이야기는<br><span class="it">온라인 채널</span>에서</h2>
+    <p style="max-width:560px;margin:24px auto 0;color:rgba(255,255,255,.7);font-size:1rem;line-height:1.7;font-weight:300">
+      공식 홈페이지에서 김만민 건축사의 공식 이력과 자격을, 네이버 블로그에서는<br>프로젝트별 상세 업무기록·현장 이야기·전문 칼럼을 만나보실 수 있습니다.
+    </p>
+    <div class="links-row">
+      <a href="https://manminkim-eng.github.io/KIMMANMIN/" target="_blank" rel="noopener" class="link-card">
+        <div class="icon">Official Website</div>
+        <h4>공식 홈페이지</h4>
+        <p>김만민 건축사의 공식 이력 · 자격 · 기술자 경력정보를 체계적으로 확인하실 수 있는 공식 홈페이지입니다.</p>
+        <span class="url">manminkim-eng.github.io/KIMMANMIN</span>
+      </a>
+      <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="link-card">
+        <div class="icon">Naver Blog</div>
+        <h4>네이버 블로그</h4>
+        <p>건축설계·감리·소방·기계설비 실무 사례와 프로젝트별 상세 포스팅, 건축 현장의 살아 있는 기록을 확인하세요.</p>
+        <span class="url">m.blog.naver.com/manmin72</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="contact">
+  <div class="container">
+    <h2 class="contact-title">함께 만드는 <span class="it">건축의 품질</span></h2>
+    <p class="contact-sub">설계 · 감리 · CM · VE 협업 및 기술 자문 문의를 환영합니다.<br>건축의 안전과 품질을 위한 여러분의 제안을 기다립니다.</p>
+    
+    <div class="contact-info">
+      <span><strong>Office</strong>㈜대성건축사사무소 · 이사</span>
+      <span><strong>Registration</strong>건축사면허 20072 · 전북건축사회 M1-14121</span>
+      <span><strong>Based in</strong>전라북도 익산시</span>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 KIM MAN MIN · ARCHITECT. All Projects &amp; Rights Reserved.</p>
+      <p style="font-family:var(--font-latin);font-style:italic;letter-spacing:.15em;margin-top:8px">Portfolio Last Updated · April 2026</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+// Navigation scroll state
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+}, {passive:true});
+
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Gallery filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    galleryItems.forEach(item => {
+      if (f === 'all' || item.dataset.cat === f) {
+        item.style.display = '';
+        setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'translateY(0)'; }, 20);
+      } else {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(10px)';
+        setTimeout(() => { item.style.display = 'none'; }, 300);
+      }
+    });
+  });
+});
+
+// Smooth scroll for nav
+document.querySelectorAll('.nav-links a[href^="#"], .btn-primary[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = target.offsetTop - 70;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
