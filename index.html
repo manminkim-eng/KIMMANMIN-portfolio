@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>김만민 건축사 포트폴리오 | KIM MAN MIN ARCHITECT</title>
-<meta name="description" content="건축사·건설사업관리기술자·국제공인 VE전문가(CVS) | 29년 경력의 종합 건축 기술인 김만민">
+<meta name="description" content="건축사·건설사업관리기술자·국제공인 VE전문가(CVS) | 31년 경력의 종합 건축 기술인 김만민">
 <meta property="og:title" content="김만민 건축사 포트폴리오">
-<meta property="og:description" content="29년 경력 · 자격증 12종 · 프로젝트 124건">
+<meta property="og:description" content="31년 경력 · 자격증 12종 · 프로젝트 124건 · 안전점검 780건">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -281,6 +281,39 @@ section{padding:var(--section-pad) 0;position:relative}
 .mt-sm{margin-top:20px}
 .mt-md{margin-top:40px}
 .mt-lg{margin-top:60px}
+
+/* ========== LIGHTBOX ========== */
+.lightbox{position:fixed;inset:0;background:rgba(20,19,16,.94);z-index:10000;display:none;align-items:center;justify-content:center;padding:40px 20px;opacity:0;transition:opacity .3s ease}
+.lightbox.active{display:flex;opacity:1}
+.lightbox-content{position:relative;max-width:min(900px,92vw);max-height:90vh;display:flex;flex-direction:column;align-items:center;gap:16px;animation:lb-in .4s ease}
+@keyframes lb-in{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.lightbox-img{max-width:100%;max-height:78vh;object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.5);background:#fff;border-radius:2px}
+.lightbox-caption{color:#e8e5dc;text-align:center;font-family:var(--font-display);font-size:1.05rem;letter-spacing:.04em}
+.lightbox-caption .lb-sub{display:block;font-family:var(--font-latin);font-style:italic;color:var(--accent-light);font-size:.82rem;letter-spacing:.2em;margin-top:6px;text-transform:uppercase}
+.lightbox-close{position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:1.6rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;border:1px solid rgba(255,255,255,.2)}
+.lightbox-close:hover{background:var(--accent);transform:rotate(90deg)}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:50px;height:50px;background:rgba(255,255,255,.1);color:#fff;font-size:1.6rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;border:1px solid rgba(255,255,255,.2);border-radius:50%;z-index:2}
+.lightbox-nav:hover{background:var(--accent)}
+.lightbox-nav.prev{left:max(16px,3vw)}
+.lightbox-nav.next{right:max(16px,3vw)}
+@media(max-width:720px){.lightbox-nav{width:40px;height:40px;font-size:1.2rem}.lightbox-close{top:12px;right:12px;width:38px;height:38px}}
+
+/* ========== CLICKABLE CERT ITEM ========== */
+.cert-item{cursor:pointer;transition:.25s;border-radius:2px}
+.cert-item:hover{background:linear-gradient(to right,rgba(139,111,62,.12),transparent);padding-left:16px;padding-right:16px;transform:translateX(4px)}
+.cert-item.featured:hover{background:linear-gradient(to right,rgba(139,111,62,.16),rgba(139,111,62,.02))}
+.cert-view-hint{font-size:.7rem;color:var(--accent);letter-spacing:.08em;opacity:0;transition:.25s;font-family:var(--font-latin);font-style:italic;white-space:nowrap}
+.cert-item:hover .cert-view-hint{opacity:.9}
+
+/* ========== CLICKABLE COMMITTEE CARD ========== */
+.committee-card{cursor:pointer}
+.committee-card .committee-view-hint{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.78rem;color:var(--accent);letter-spacing:.08em;font-family:var(--font-latin);font-style:italic;opacity:.7;transition:.25s}
+.committee-card:hover .committee-view-hint{opacity:1;gap:12px}
+
+/* ========== PROFILE IMAGE UPDATES ========== */
+.profile-img-wrap .img-inner{background:transparent}
+.profile-img-wrap .img-inner img{width:100%;height:100%;object-fit:cover;object-position:center top}
+
 </style>
 </head>
 <body>
@@ -315,7 +348,7 @@ section{padding:var(--section-pad) 0;position:relative}
         <p class="hero-tagline">
           설계부터 감리·VE·안전점검까지<br>
           건축 생애주기 전 과정을 수행하는 <strong>종합 건축기술인</strong>.
-          29년 8개월의 현장과 12종의 전문 자격으로
+          31년 7개월의 현장과 12종의 전문 자격으로
           <strong>품질과 안전</strong>을 건축의 중심에 둡니다.
         </p>
         <div class="hero-roles">
@@ -354,9 +387,9 @@ section{padding:var(--section-pad) 0;position:relative}
   <div class="container">
     <div class="stats-grid">
       <div class="stat">
-        <div class="stat-number">29<span class="unit">년 8개월</span></div>
+        <div class="stat-number">31<span class="unit">년 7개월</span></div>
         <div class="stat-label">건설기술자 경력</div>
-        <div class="stat-sub">10,831 Days</div>
+        <div class="stat-sub">11,545 Days</div>
       </div>
       <div class="stat">
         <div class="stat-number">124<span class="unit">건</span></div>
@@ -383,12 +416,7 @@ section{padding:var(--section-pad) 0;position:relative}
     <div class="profile-grid">
       <div class="profile-img-wrap reveal">
         <div class="img-inner">
-          <div class="profile-img-placeholder">
-            <strong style="font-size:1.15rem;letter-spacing:.3em;display:block;margin-bottom:10px;color:#8b6f3e;font-family:var(--font-display);">KIM MAN MIN</strong>
-            <span style="font-family:var(--font-latin);font-style:italic;color:#8b6f3e;letter-spacing:.15em;">Architect · CVS · VMP</span>
-            <br><br>
-            <span style="font-size:.72rem;color:#999;font-style:normal;letter-spacing:.08em;line-height:1.7;">프로필 사진을 업로드하면<br>이곳에 표시됩니다<br>(추천: 정면 또는 45° 각도,<br>배경 깔끔한 실내 촬영)</span>
-          </div>
+          <img src="assets/profile/profile.jpg" alt="김만민 건축사" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'profile-img-placeholder\'><strong style=\'font-size:1.15rem;letter-spacing:.3em;display:block;margin-bottom:10px;color:#8b6f3e;font-family:var(--font-display);\'>KIM MAN MIN</strong><span style=\'font-family:var(--font-latin);font-style:italic;color:#8b6f3e;letter-spacing:.15em;\'>Architect · CVS · VMP</span></div>'">
         </div>
       </div>
       <div class="profile-content reveal">
@@ -504,55 +532,65 @@ section{padding:var(--section-pad) 0;position:relative}
         <img src="images/김만민_포트폴리오_02_자격증타임라인.png" alt="자격증 타임라인">
       </div>
       <ul class="certs-list reveal">
-        <li class="cert-item featured">
+        <li class="cert-item featured" data-lb-img="assets/licenses/건축사_자격증.jpg" data-lb-title="건축사 자격증" data-lb-sub="National License · No. 20072 · 2015.12">
           <span class="cert-year">2015.12</span>
           <div class="cert-name"><span class="cert-star">★</span> 건축사 <small>국토교통부 · 면허 20072</small></div>
-          <span class="cert-badge">최고자격</span>
+          <div style="display:flex;gap:10px;align-items:center"><span class="cert-view-hint">자격증 보기 →</span><span class="cert-badge">최고자격</span></div>
         </li>
-        <li class="cert-item featured">
+        <li class="cert-item featured" data-lb-img="assets/licenses/CVS_자격증.jpg" data-lb-title="국제공인 VE전문가 (CVS)" data-lb-sub="SAVE International · 202307010 · 2023.07">
           <span class="cert-year">2023.07</span>
           <div class="cert-name"><span class="cert-star">★</span> 국제공인 VE전문가 CVS <small>SAVE International</small></div>
-          <span class="cert-badge">국제자격</span>
+          <div style="display:flex;gap:10px;align-items:center"><span class="cert-view-hint">자격증 보기 →</span><span class="cert-badge">국제자격</span></div>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/VMP_자격증.jpg" data-lb-title="가치혁신전문가 (VMP)" data-lb-sub="한국가치경영협회 · VMP2307-C340 · 2023.07">
           <span class="cert-year">2023.07</span>
           <div class="cert-name">가치혁신전문가 VMP <small>한국가치경영협회</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/건축산업기사.jpg" data-lb-title="건축산업기사" data-lb-sub="건축 · 특급 · 2012.11">
           <span class="cert-year">2012.11</span>
           <div class="cert-name">건축산업기사 <small>건축 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/공조냉동기계기사.jpg" data-lb-title="공조냉동기계기사" data-lb-sub="기계 · 특급 · 2005.11">
           <span class="cert-year">2005.11</span>
           <div class="cert-name">공조냉동기계기사 <small>기계 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/건축설비기사.jpg" data-lb-title="건축설비기사" data-lb-sub="건축 · 특급 · 2003.12">
           <span class="cert-year">2003.12</span>
           <div class="cert-name">건축설비기사 <small>건축 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/소방설비기사_전기.jpg" data-lb-title="소방설비기사 (전기)" data-lb-sub="소방 기계+전기 완성 · 2003.06">
           <span class="cert-year">2003.06</span>
           <div class="cert-name">소방설비기사(전기) <small>소방 기계+전기 완성</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/토목기사.jpg" data-lb-title="토목기사" data-lb-sub="토목 · 특급 · 1998.10">
           <span class="cert-year">1998.10</span>
           <div class="cert-name">토목기사 <small>토목 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/소방설비기사_기계.jpg" data-lb-title="소방설비기사 (기계)" data-lb-sub="안전 · 특급 · 1998.03">
           <span class="cert-year">1998.03</span>
           <div class="cert-name">소방설비기사(기계) <small>안전 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/건설기계설비기사.jpg" data-lb-title="건설기계설비기사" data-lb-sub="기계 · 특급 · 1997.08">
           <span class="cert-year">1997.08</span>
           <div class="cert-name">건설기계설비기사 <small>기계 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/일반기계기사.jpg" data-lb-title="일반기계기사" data-lb-sub="기계 · 특급 · 1997.06">
           <span class="cert-year">1997.06</span>
           <div class="cert-name">일반기계기사 <small>기계 · 특급</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
-        <li class="cert-item">
+        <li class="cert-item" data-lb-img="assets/licenses/건설기계설비산업기사.jpg" data-lb-title="건설기계설비산업기사" data-lb-sub="기계 · 최초 자격 · 1992.12">
           <span class="cert-year">1992.12</span>
           <div class="cert-name">건설기계설비산업기사 <small>기계 · 최초 자격</small></div>
+          <span class="cert-view-hint">자격증 보기 →</span>
         </li>
       </ul>
     </div>
@@ -993,7 +1031,7 @@ section{padding:var(--section-pad) 0;position:relative}
 </div>
 
 <!-- ============ COMMITTEE ACTIVITIES ============ -->
-<section>
+<section id="committee">
   <div class="container">
     <div class="section-head reveal">
       <div class="eyebrow">Public Committee</div>
@@ -1001,25 +1039,35 @@ section{padding:var(--section-pad) 0;position:relative}
       <p class="lede">익산시·전라북도·전북특별자치도 등 공공기관의 건축위원·기술자문단 위원으로 활동하며 지역 건축물의 안전성과 품질 향상에 기여하고 있습니다.</p>
     </div>
     <div class="committee-grid">
-      <div class="committee-card reveal">
+      <div class="committee-card reveal" data-lb-img="assets/advisory/위촉장_익산시_2021_08.jpg" data-lb-title="익산시 건축위원회 위원" data-lb-sub="Iksan City · 2021.08 — 2027.07">
         <div class="committee-period">2021.08 — 2027.07</div>
         <div class="committee-title">익산시 건축위원회 위원</div>
         <div class="committee-org">위촉기관 : 익산시장<br>건축심의 · 허가 자문 · 도시경관 심사</div>
+        <span class="committee-view-hint">위촉장 보기 <span>→</span></span>
       </div>
-      <div class="committee-card reveal">
+      <div class="committee-card reveal" data-lb-img="assets/advisory/위촉장_전북_2025_01.jpg" data-lb-title="전북특별자치도 기술자문단 자문위원" data-lb-sub="Jeonbuk State · 2025.02 — 2027.01">
         <div class="committee-period">2025.02 — 2027.01</div>
         <div class="committee-title">전북특별자치도 기술자문단 자문위원</div>
         <div class="committee-org">위촉기관 : 전북특별자치도지사<br>도 단위 공공건축 기술자문</div>
+        <span class="committee-view-hint">위촉장 보기 <span>→</span></span>
       </div>
-      <div class="committee-card reveal">
+      <div class="committee-card reveal" data-lb-img="assets/advisory/위촉장_전북_2023_01.jpg" data-lb-title="전라북도 공동주택 기술자문단 자문위원" data-lb-sub="Jeonbuk Province · 2023.01 — 2025.01">
         <div class="committee-period">2023.01 — 2025.01</div>
         <div class="committee-title">전라북도 공동주택 기술자문단 자문위원</div>
         <div class="committee-org">위촉기관 : 전라북도지사<br>공동주택 기술 심의</div>
+        <span class="committee-view-hint">위촉장 보기 <span>→</span></span>
       </div>
-      <div class="committee-card reveal">
+      <div class="committee-card reveal" data-lb-img="assets/advisory/위촉장_익산시_2025_05.jpg" data-lb-title="익산시 지역건축안전센터 건축안전자문단 위원" data-lb-sub="Iksan Building Safety Center · 2025.05 — 2027.05">
         <div class="committee-period">2025.05 — 2027.05</div>
         <div class="committee-title">익산시 지역건축안전센터 건축안전자문단 위원</div>
         <div class="committee-org">위촉기관 : 익산시장<br>건축물 안전 자문</div>
+        <span class="committee-view-hint">위촉장 보기 <span>→</span></span>
+      </div>
+      <div class="committee-card reveal" data-lb-img="assets/advisory/위촉장_익산시_2024_08.jpg" data-lb-title="익산시 공공건축가" data-lb-sub="Iksan Public Architect · 2024.08 ~">
+        <div class="committee-period">2024.08 ~</div>
+        <div class="committee-title">익산시 공공건축가 위촉</div>
+        <div class="committee-org">위촉기관 : 익산시장<br>공공건축 품격 향상 자문</div>
+        <span class="committee-view-hint">위촉장 보기 <span>→</span></span>
       </div>
     </div>
   </div>
@@ -1189,5 +1237,102 @@ document.querySelectorAll('.nav-links a[href^="#"], .btn-primary[href^="#"]').fo
   });
 });
 </script>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-caption">
+  <button class="lightbox-close" id="lbClose" aria-label="닫기">×</button>
+  <button class="lightbox-nav prev" id="lbPrev" aria-label="이전">‹</button>
+  <button class="lightbox-nav next" id="lbNext" aria-label="다음">›</button>
+  <div class="lightbox-content">
+    <img class="lightbox-img" id="lbImg" src="" alt="">
+    <div class="lightbox-caption" id="lbCaption">
+      <span id="lbTitle"></span>
+      <span class="lb-sub" id="lbSub"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ========== LIGHTBOX LOGIC ========== */
+(function(){
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbTitle = document.getElementById('lbTitle');
+  const lbSub = document.getElementById('lbSub');
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+
+  let group = [];
+  let idx = 0;
+
+  function openLightbox(items, startIdx){
+    group = items;
+    idx = startIdx;
+    show();
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function show(){
+    const item = group[idx];
+    if(!item) return;
+    lbImg.src = item.img;
+    lbImg.alt = item.title || '';
+    lbTitle.textContent = item.title || '';
+    lbSub.textContent = item.sub || '';
+    // 단일 이미지면 네비게이션 숨김
+    const showNav = group.length > 1;
+    lbPrev.style.display = showNav ? 'flex' : 'none';
+    lbNext.style.display = showNav ? 'flex' : 'none';
+  }
+  function closeLightbox(){
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 300);
+  }
+  function prev(){ idx = (idx - 1 + group.length) % group.length; show(); }
+  function next(){ idx = (idx + 1) % group.length; show(); }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', prev);
+  lbNext.addEventListener('click', next);
+  lb.addEventListener('click', (e) => { if(e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if(!lb.classList.contains('active')) return;
+    if(e.key === 'Escape') closeLightbox();
+    else if(e.key === 'ArrowLeft') prev();
+    else if(e.key === 'ArrowRight') next();
+  });
+
+  // 자격증 그룹
+  const certItems = Array.from(document.querySelectorAll('.cert-item[data-lb-img]'));
+  const certGroup = certItems.map(el => ({
+    img: el.dataset.lbImg,
+    title: el.dataset.lbTitle,
+    sub: el.dataset.lbSub
+  }));
+  certItems.forEach((el, i) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(certGroup, i);
+    });
+  });
+
+  // 위촉장 그룹
+  const commItems = Array.from(document.querySelectorAll('.committee-card[data-lb-img]'));
+  const commGroup = commItems.map(el => ({
+    img: el.dataset.lbImg,
+    title: el.dataset.lbTitle,
+    sub: el.dataset.lbSub
+  }));
+  commItems.forEach((el, i) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(commGroup, i);
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
