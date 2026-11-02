@@ -438,7 +438,7 @@ section{padding:var(--section-pad) 0;position:relative}
   .ptl-date{font-size:.72rem;white-space:normal;line-height:1.3}
   .ptl-chips{grid-template-columns:repeat(3,1fr);gap:8px}
   .ptl-chips span{padding:10px 2px;font-size:.76rem;word-break:keep-all}
-  .mm-arc-brand{width:100%}
+  .mm-arc-brand,.mm-arc-links,.mm-arc-ver{flex:1 1 100%}
 }
 /* 갤러리 더 보기 */
 .gallery-item.g-hide{display:none!important}
@@ -453,7 +453,7 @@ section{padding:var(--section-pad) 0;position:relative}
 .mm-arc-links{display:flex;flex-wrap:wrap;gap:6px 18px;flex:1}
 .mm-arc-links a{color:#cfc8b6;padding:2px 0;border-bottom:1px solid transparent}
 .mm-arc-links a:hover{color:#e6cf9c;border-bottom-color:#c7a972}
-.mm-arc-links a.on{color:#e6cf9c;font-weight:600}
+.mm-arc-links .on{color:#e6cf9c;font-weight:600;padding:2px 0}
 .mm-arc-ver{font-size:.74rem;letter-spacing:.08em;color:#8f8877}
 @media print{.mm-arc,.gallery-more{display:none!important}}
 /* v1.1.2 휴대폰 보정 (2026-11-02) — 자격 목록 글자 세로 쪼개짐: 숨은 「자격증 보기」 문구가 자리를 차지하던 것 제거 */
@@ -1837,60 +1837,7 @@ section{padding:var(--section-pad) 0;position:relative}
   </div>
 </section>
 
-<!-- ============ LINKS (홈페이지/CM·VE/블로그) ============ -->
-<section class="links-section" id="links">
-  <div class="container">
-    <div class="eyebrow" style="color:var(--accent-light)">Connect</div>
-    <h2 class="section-title">더 많은 이야기는<br><span class="it">온라인 채널</span>에서</h2>
-    <p style="max-width:640px;margin:24px auto 0;color:rgba(255,255,255,.7);font-size:1rem;line-height:1.7;font-weight:300">
-      공식 홈페이지에서는 <strong style="color:#f6f2e7;font-weight:500">이력과 자격</strong>을, CM·VE 전문 사이트에서는<br>
-      <strong style="color:#f6f2e7;font-weight:500">건설사업관리·가치공학 실무 기록</strong>을, 네이버 블로그에서는 <strong style="color:#f6f2e7;font-weight:500">현장 이야기와 칼럼</strong>을 만나보실 수 있습니다.
-    </p>
-    <div class="links-row">
-
-      <a href="https://manminkim-eng.github.io/KIMMANMIN/" target="_blank" rel="noopener" class="link-card">
-        <div class="card-icon" aria-hidden="true">
-          <!-- GitHub icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.56 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/>
-          </svg>
-        </div>
-        <div class="icon">Official Website</div>
-        <h4>공식 홈페이지</h4>
-        <p>김만민 건축사의 공식 이력 · 보유 자격 · 기술자 경력정보를 체계적으로 정리한 공식 홈페이지입니다.</p>
-        <span class="url">manminkim-eng.github.io/KIMMANMIN</span>
-      </a>
-
-      <a href="https://manminkim-eng.github.io/26CM-VE-KIMMANMIN/" target="_blank" rel="noopener" class="link-card featured">
-        <div class="card-icon" aria-hidden="true">
-          <!-- GitHub icon (CM·VE 전문 사이트 역시 GitHub Pages 기반) -->
-          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.56 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/>
-          </svg>
-        </div>
-        <div class="icon">CM · VE Archive</div>
-        <h4>CM·VE 전문 사이트</h4>
-        <p>건설사업관리(CM)와 가치공학(VE) 실무 사례, 감독권한대행 감리 프로젝트, 설계 경제성 검토 기록을 담은 전문 아카이브입니다.</p>
-        <span class="url">manminkim-eng.github.io/26CM-VE-KIMMANMIN</span>
-      </a>
-
-      <a href="https://m.blog.naver.com/manmin72" target="_blank" rel="noopener" class="link-card">
-        <div class="card-icon" aria-hidden="true">
-          <!-- Pen / Blog icon -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
-            <path d="M15 5l4 4"/>
-          </svg>
-        </div>
-        <div class="icon">Naver Blog</div>
-        <h4>네이버 블로그</h4>
-        <p>건축설계 · 감리 · 소방 · 기계설비 실무 사례와 프로젝트별 상세 포스팅, 건축 현장의 살아 있는 기록을 확인하세요.</p>
-        <span class="url">m.blog.naver.com/manmin72</span>
-      </a>
-
-    </div>
-  </div>
-</section>
+<!-- v1.1.3 (2026-11-02) Connect 구역(홈페이지 · CM·VE · 블로그 카드) 삭제 — 상단 「MANMIN 홈」 · 첫 화면 「네이버 블로그」 · 하단 아카이브 띠와 중복 -->
 
 <!-- ============ CONTACT / FOOTER ============ -->
 <footer class="contact">
@@ -1906,21 +1853,20 @@ section{padding:var(--section-pad) 0;position:relative}
     
     <div class="footer-bottom">
       <p>© 2026 KIM MAN MIN · ARCHITECT. All Projects &amp; Rights Reserved.</p>
-      <p style="font-family:var(--font-latin);letter-spacing:.15em;margin-top:8px">Portfolio Ver 1.1.2 · Updated 2026-11-02</p>
+      <p style="font-family:var(--font-latin);letter-spacing:.15em;margin-top:8px">Portfolio Ver 1.1.3 · Updated 2026-11-02</p>
     </div>
   </div>
 </footer>
 <!-- MANMIN 아카이브 공통 띠 (2026-11-02 · 건축 포트폴리오 · CM·VE 아카이브 · 경력 대시보드 · 홈페이지 같은 구성) -->
 <nav class="mm-arc" aria-label="MANMIN 아카이브">
   <div class="mm-arc-in">
-    <a class="mm-arc-brand" href="https://manminkim-eng.github.io/KIMMANMIN/">MANMIN <span>ARCHIVE</span></a>
+    <span class="mm-arc-brand">MANMIN <span>ARCHIVE</span></span>
     <div class="mm-arc-links">
-      <a class="on" href="https://manminkim-eng.github.io/KIMMANMIN-portfolio/" aria-current="page">건축 포트폴리오</a>
+      <span class="on" aria-current="page">건축 포트폴리오</span>
       <a href="https://manminkim-eng.github.io/26CM-VE-KIMMANMIN/">건설사업관리 · 가치공학</a>
       <a href="https://manminkim-eng.github.io/career/">경력 대시보드</a>
-      <a href="https://manminkim-eng.github.io/KIMMANMIN/">홈페이지 ↗</a>
     </div>
-    <div class="mm-arc-ver">건축 포트폴리오 · Ver 1.1.2 · 2026-11-02</div>
+    <div class="mm-arc-ver">건축 포트폴리오 · Ver 1.1.3 · 2026-11-02</div>
   </div>
 </nav>
 
