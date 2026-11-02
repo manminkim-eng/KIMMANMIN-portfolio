@@ -456,6 +456,14 @@ section{padding:var(--section-pad) 0;position:relative}
 .mm-arc-links a.on{color:#e6cf9c;font-weight:600}
 .mm-arc-ver{font-size:.74rem;letter-spacing:.08em;color:#8f8877}
 @media print{.mm-arc,.gallery-more{display:none!important}}
+/* v1.1.2 휴대폰 보정 (2026-11-02) — 자격 목록 글자 세로 쪼개짐: 숨은 「자격증 보기」 문구가 자리를 차지하던 것 제거 */
+@media(max-width:640px){
+  .cert-item{grid-template-columns:62px 1fr auto;gap:12px}
+  .cert-item.featured,.cert-item:hover{padding-left:12px;padding-right:12px;transform:none}
+  .cert-view-hint{display:none}
+  .cert-badge{white-space:nowrap}
+  .cert-year{font-size:.9rem}
+}
 </style>
 </head>
 <body>
@@ -1898,7 +1906,7 @@ section{padding:var(--section-pad) 0;position:relative}
     
     <div class="footer-bottom">
       <p>© 2026 KIM MAN MIN · ARCHITECT. All Projects &amp; Rights Reserved.</p>
-      <p style="font-family:var(--font-latin);letter-spacing:.15em;margin-top:8px">Portfolio Ver 1.1.1 · Updated 2026-11-02</p>
+      <p style="font-family:var(--font-latin);letter-spacing:.15em;margin-top:8px">Portfolio Ver 1.1.2 · Updated 2026-11-02</p>
     </div>
   </div>
 </footer>
@@ -1912,7 +1920,7 @@ section{padding:var(--section-pad) 0;position:relative}
       <a href="https://manminkim-eng.github.io/career/">경력 대시보드</a>
       <a href="https://manminkim-eng.github.io/KIMMANMIN/">홈페이지 ↗</a>
     </div>
-    <div class="mm-arc-ver">건축 포트폴리오 · Ver 1.1.1 · 2026-11-02</div>
+    <div class="mm-arc-ver">건축 포트폴리오 · Ver 1.1.2 · 2026-11-02</div>
   </div>
 </nav>
 
